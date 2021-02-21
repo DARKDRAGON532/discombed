@@ -13,7 +13,7 @@ setuptools.setup(
     url="https://github.com/darkdragon532/discombed",
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License ::  GPL-3.0 License",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
     ],
     packages=setuptools.find_packages(),
