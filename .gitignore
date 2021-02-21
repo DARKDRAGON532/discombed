@@ -1,1 +1,5 @@
 __pycache__
+build
+dist
+discombed_DARKDRAGON532.egg-info
+.DS_Store
