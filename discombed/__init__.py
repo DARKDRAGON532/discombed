@@ -11,18 +11,19 @@ def hex_to_decimal(hex: str) -> int:
 class Embed:
     """
     title = title for embed\n
-    colour = decimal value of colour (use dischook.hex_to_decimal for it)\n
+    colour = decimal value of colour (use dischook.hex_to_decimal for converting hex to decimal)\n
     description = description for embed\n
+    url = redirection url\n
     timestamp = timestamp, must be in datetime.datetime format
     """
 
     def __init__(self, title: str = None, colour: str = None, url: str = None, description: str = None, timestamp: str = None) -> None:
-        self.fields = []
         self.title = title
         self.colour = colour
         self.url = url
         self.description = description
         self.timestamp = str(timestamp) if timestamp else None
+        self.fields = []
         self.author = None
         self.image = None
         self.thumbnail_image = None
@@ -109,7 +110,7 @@ class Hook:
             "footer": embed.footer
         })
 
-    def send(self, silent=False):
+    def send(self, silent=True):
         """
         Sends embed
         \n
