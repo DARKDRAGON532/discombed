@@ -3,7 +3,9 @@ Discombed is a very bad wrapper for discord embeds
 It is made in python and can support python 3.6 and above (hopefully)
 
 # Quickstart
-
+```
+pip3 install discombed
+```
 ```python
 import discombed
 
